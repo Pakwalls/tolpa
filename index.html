@@ -20,39 +20,57 @@
       <section class="tickets">
         <ul class="cards">
           <li class="cards__item article">
-            <h2 class="article__name-lable">Имя члена толпы</h2>
+            <h2 class="article__lable">Имя члена толпы</h2>
             <p class="article__name">Никифор Иванович</p>
-            <h3 class="article__age-lable">Возраст члена толпы</h3>
+            <h3 class="article__lable">Возраст члена толпы</h3>
             <p class="article__age">58</p>
           </li>
           <li class="cards__item article">
-            <h2 class="article__name-lable">Имя члена толпы</h2>
+            <h2 class="article__lable">Имя члена толпы</h2>
             <p class="article__name">Никифор Иванович</p>
-            <h3 class="article__age-lable">Возраст члена толпы</h3>
+            <h3 class="article__lable">Возраст члена толпы</h3>
             <p class="article__age">58</p>
           </li>
           <li class="cards__item article">
-            <h2 class="article__name-lable">Имя члена толпы</h2>
+            <h2 class="article__lable">Имя члена толпы</h2>
             <p class="article__name">Никифор Иванович</p>
-            <h3 class="article__age-lable">Возраст члена толпы</h3>
+            <h3 class="article__lable">Возраст члена толпы</h3>
             <p class="article__age">58</p>
           </li>
           <li class="cards__item article">
-            <h2 class="article__name-lable">Имя члена толпы</h2>
+            <h2 class="article__lable">Имя члена толпы</h2>
             <p class="article__name">Никифор Иванович</p>
-            <h3 class="article__age-lable">Возраст члена толпы</h3>
+            <h3 class="article__lable">Возраст члена толпы</h3>
             <p class="article__age">58</p>
           </li>
           <li class="cards__item article">
-            <h2 class="article__name-lable">Имя члена толпы</h2>
+            <h2 class="article__lable">Имя члена толпы</h2>
             <p class="article__name">Никифор Иванович</p>
-            <h3 class="article__age-lable">Возраст члена толпы</h3>
+            <h3 class="article__lable">Возраст члена толпы</h3>
             <p class="article__age">58</p>
           </li>
           <li class="cards__item article">
-            <h2 class="article__name-lable">Имя члена толпы</h2>
+            <h2 class="article__lable">Имя члена толпы</h2>
             <p class="article__name">Никифор Иванович</p>
-            <h3 class="article__age-lable">Возраст члена толпы</h3>
+            <h3 class="article__lable">Возраст члена толпы</h3>
+            <p class="article__age">58</p>
+          </li>
+          <li class="cards__item article">
+            <h2 class="article__lable">Имя члена толпы</h2>
+            <p class="article__name">Никифор Иванович</p>
+            <h3 class="article__lable">Возраст члена толпы</h3>
+            <p class="article__age">58</p>
+          </li>
+          <li class="cards__item article">
+            <h2 class="article__lable">Имя члена толпы</h2>
+            <p class="article__name">Никифор Иванович</p>
+            <h3 class="article__lable">Возраст члена толпы</h3>
+            <p class="article__age">58</p>
+          </li>
+          <li class="cards__item article">
+            <h2 class="article__lable">Имя члена толпы</h2>
+            <p class="article__name">Никифор Иванович</p>
+            <h3 class="article__lable">Возраст члена толпы</h3>
             <p class="article__age">58</p>
           </li>
         </ul>
@@ -65,24 +83,27 @@
 
   <template>
     <li class="cards__item article">
-      <h2 class="article__name-lable"></h2>
+      <h2 class="article__lable"></h2>
       <p class="article__name"></p>
-      <h3 class="article__age-lable"></h3>
+      <h3 class="article__lable"></h3>
       <p class="article__age"></p>
     </li>
   </template>
 
   <div class="popup">
-    <form class="popup__form" name="popup__form" method="get">
-      <h2 class="popup__title">Новый человек</h2>
-      <fieldset class="popup__data">
-        <input type="text" class="popup__input" name="name" id="name" minlength="2" maxlength="40" placeholder="Введите ваше имя" required>
-        <span class="popup__error" id="name-error"></span>
-        <input type="number" class="popup__input" name="age" id="age" minlength="10" maxlength="99" placeholder="Введите ваш возраст" required>
-        <span class="popup__error" id="are-error"></span>
-    </fieldset>
-      <button class="popup__button" type="submit">Добавить</button>
-    </form>
+    <div class="popup__container">
+      <form class="popup__form" name="popup__form" method="get">
+        <h2 class="popup__title">Новый человек</h2>
+        <fieldset class="popup__data">
+          <input type="text" class="popup__input" name="name" id="name" minlength="2" maxlength="40" placeholder="Введите ваше имя" required>
+          <span class="popup__error" id="name-error"></span>
+          <input type="number" class="popup__input" name="age" id="age" minlength="10" maxlength="99" placeholder="Введите ваш возраст" required>
+          <span class="popup__error" id="are-error"></span>
+      </fieldset>
+        <button class="popup__button" type="submit">Добавить</button>
+      </form>
+      <img class="popup__closer" src="./images/close.svg" alt="закрыть попап">
+    </div>
   </div>
 
 

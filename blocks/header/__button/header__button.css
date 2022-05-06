@@ -11,4 +11,5 @@
 .header__button:hover {
   color: #fff;
   border: 2px solid #fff;
+  cursor: pointer;
 }
